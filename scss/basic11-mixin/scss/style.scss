@@ -1,0 +1,6 @@
+@use "./partials/mixins";
+//import를 써도 되지만 use는 에러를 잡아주기 때문에 사용하는 것임
+
+.cls{
+    @include mixins.flex(false,'center','around',20px)
+}

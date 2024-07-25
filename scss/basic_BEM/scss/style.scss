@@ -1,0 +1,22 @@
+//📒BEM구조 -- id나 class등의 이름을 구조적으로 붙여주는 방법
+
+//B:block - 특정 독립적인 요소
+//E:element - 하위 요소들
+//M:modifier - 수정자
+
+//B:block - 특정 독립적인 요소 //.text-box
+//E:element - 하위 요소들(__) //.text-box__title / .text-box__desc 등등
+//M:modifier - 수정자(--) //.text-box__title--red
+//- , _ ==> 띄어쓰기의 의미 //btnView btn_view / btn-view
+
+.text-box{
+    width: 300px;
+    border: 1px solid #333;
+    position: relative;
+    &>&__title{
+        color: blue;
+        &--red{
+            color: red;
+        }
+    }
+}

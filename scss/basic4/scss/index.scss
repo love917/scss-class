@@ -1,0 +1,28 @@
+@use "./partials/vars" as v1;
+
+$var1:#A91D3A; //전역변수 : 어디서든 사용할 수 있다.
+
+h2{color: v1.$color-primary;}
+.box{
+    background-color: $var1;
+    //$spacer20px:vars.$spacer *4;//지역변수 : {}안에서만 생존. 밖에서는 사용할 수 없다.
+    //margin-top: $spacer20px;
+}
+//.box2{margin-top: $spacer20px;} //-->에러남
+
+//복습
+$width:10;
+$widthPx:10px;
+$Class-name:cls;
+$Class-name2:".cls";
+
+.box3{
+    width: #{$width}px;
+    width: #{$width * $width}px;
+    //height: $widthPx * 10px; --> 🟥*(곱하기)의 경우에 widthPx(10px)뒤에 px을 붙이면 에러남
+    height: $widthPx * 10;
+}
+#{$Class-name2}{
+    width: 100px;
+}
+

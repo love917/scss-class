@@ -1,0 +1,19 @@
+.cls {
+  background-color: #000;
+  font-size: 40px;
+  border: 3px solid #A91D3A;
+}
+
+.cls2 {
+  background-color: #000;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.cls3 {
+  background-color: #0A6847;
+}
+
+#scls-name {
+  background-color: #F3CA52;
+}
